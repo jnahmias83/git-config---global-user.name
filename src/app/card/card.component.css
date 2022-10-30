@@ -1,0 +1,8 @@
+.card {
+    margin-left: 5px;
+}
+
+.card:hover {
+    box-shadow: 8px 8px 8px black;
+    transform: translatey(-10px);
+}

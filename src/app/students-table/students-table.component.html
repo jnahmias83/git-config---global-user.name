@@ -1,0 +1,20 @@
+<h4>{{selectedCourse}} Students</h4>
+
+<table [ngClass]="'table'">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Course</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr *ngFor="let student of studentsList">
+            <ng-container *ngIf="student.Course == selectedCourse">
+            <td>{{student.ID}}</td>
+            <td>{{student.Name}}</td>
+            <td>{{student.Course}}</td>
+        </ng-container>
+        </tr>
+    </tfoot>
+</table>

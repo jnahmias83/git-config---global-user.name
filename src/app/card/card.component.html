@@ -1,0 +1,11 @@
+<div class="row">
+    <div *ngFor="let course of totalCourses" class="card column" style="width: 18rem;">
+        <div class="card-header">
+            {{course.name}}
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{course.info}}</p>
+          <a href="#" class="btn btn-primary">More</a>
+        </div>
+    </div>
+</div>
